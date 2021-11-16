@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Article-List.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="assets/css/Team-Clean.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" id="sidebar" style="background: var(--bs-orange);color: var(--bs-blue);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon"><i class="fas fa-terminal"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Sam<br>Keyser<br></span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fa fa-code"></i><span>Projects</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="table.html"><i class="fa fa-book"></i><span>Book Hitlist<br></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/TrainingAfternoon"><i class="fa fa-github"></i><span>Github</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/samuel-keyser/"><i class="fa fa-linkedin-square"></i><span>LinkedIn</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://open.kattis.com/users/sam-keyser-6430"><i class="fa fa-gavel"></i><span>Kattis</span></a><a class="nav-link" href="contact.html"><i class="fa fa-external-link-square"></i><span>Contact Me</span></a></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" id="topbar">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav flex-nowrap ms-auto" id="titleline">
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <h1 class="py-1 mt-2">student. developer. innovator.</h1>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                        </ul>
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button" style="background: var(--bs-orange);"><i class="fas fa-search"></i></button></div>
+                        </form>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 fw-bold">Book Info</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 text-nowrap">
+                                    <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Show&nbsp;<select class="d-inline-block form-select form-select-sm">
+                                                <option value="10" selected="">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>&nbsp;</label></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-md-end dataTables_filter" id="dataTable_filter"><label class="form-label"><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                </div>
+                            </div>
+                            <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Title</th>
+                                            <th>Rating</th>
+                                            <th>Author</th>
+                                            <th>Genre</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>The Legend of Randidly Ghosthound</td>
+                                            <td>&nbsp;9.4 / 10</td>
+                                            <td>Noreto Flood</td>
+                                            <td>System Litrpg with Xianxia Elements</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>A Practical Guide to Evil</td>
+                                            <td>9.39 / 10</td>
+                                            <td>ErraticErrata</td>
+                                            <td>Epic Fantasy<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Mother of Learning</td>
+                                            <td>8.7 / 10</td>
+                                            <td>Domagoj Kurmaic<br></td>
+                                            <td>Timeloop Fantasy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>The Perfect Run</td>
+                                            <td>8.6 / 10</td>
+                                            <td>Maxime J, Durand</td>
+                                            <td>Superhero Fiction<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>A Journey of Black and Red</td>
+                                            <td>8.4 / 10</td>
+                                            <td>San Francisco</td>
+                                            <td>Vampire<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Dungeon Crawler Carl</td>
+                                            <td>8.3 / 10</td>
+                                            <td>Matt Dinniman</td>
+                                            <td>System Apocalypse</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>The Second Siege</td>
+                                            <td>8.2 / 10</td>
+                                            <td>Henry H. Neff</td>
+                                            <td>Fantasy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Meddling Kids</td>
+                                            <td>8 / 10</td>
+                                            <td>Edgar Cantero</td>
+                                            <td>Satirical Mystery / Eldritch Horror<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Worm</td>
+                                            <td>7.9 / 10</td>
+                                            <td>Wildbow</td>
+                                            <td>Superhero Fiction<br></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Omniscient Reader</td>
+                                            <td>7.8 / 10</td>
+                                            <td>싱숑<br></td>
+                                            <td>System Apocalypse</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td><strong>Rank</strong></td>
+                                            <td><strong>Title</strong></td>
+                                            <td><strong>Rating</strong></td>
+                                            <td><strong>Author</strong></td>
+                                            <td><strong>Genre</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer footer-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col item social"><a href="https://www.linkedin.com/in/samuel-keyser/"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/TrainingAfternoon"><i class="icon ion-social-github"></i></a><a href="https://open.kattis.com/users/sam-keyser-6430"><i class="fas fa-gavel"></i></a>
+                            <div class="mt-3"><i class="fa fa-mobile-phone" style="margin-right: 7px;"></i><span>(608) 361 - 8993</span></div>
+                            <div><i class="fa fa-envelope-o" style="margin-right: 7px;"></i><span>samkeyser1@gmail.com</span></div>
+                        </div>
+                    </div>
+                    <p class="copyright">Sam Keyser © 2021</p>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
